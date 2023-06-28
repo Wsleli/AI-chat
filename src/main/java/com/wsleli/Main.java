@@ -24,7 +24,6 @@ public class Main {
                 System.out.println("拜拜~");
                 return;
             }
-
             devChatRequest.setMessage(message);
             BaseResponse<DevChatResponse> response = client.doChat(devChatRequest);
             System.out.println(response.getData().getContent());
